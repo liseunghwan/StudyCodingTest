@@ -1,4 +1,4 @@
-#두 수의 곱
+#두 수의 곱하기
 
 def solution(num1, num2):
     answer = num1*num2
