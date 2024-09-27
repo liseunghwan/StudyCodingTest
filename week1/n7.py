@@ -1,12 +1,15 @@
-#분수의 덧셈
-import math
+from fractions import Fraction
 
-def solution(denum1, num1, denum2, num2):
+def solution(numer1, denom1, numer2, denom2):
     
-    boonmo = num1 * num2
-    boonja = denum1 * num2 + denum2 * num1
+    bunsu1 = Fraction(numer1/denom1).limit_denominator(1000)
+    bunsu2 = Fraction(numer2/denom2).limit_denominator(1000)
     
-    gcd_value = math.gcd(boonmo, boonja)
+    bunsu =  bunsu1 + bunsu2
+    numer = bunsu.numerator
+    denom = bunsu.denominator
+
+    answer=[numer,denom]
     
-    answer = [boonja / gcd_value, boonmo / gcd_value]
+    
     return answer
