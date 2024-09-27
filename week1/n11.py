@@ -1,3 +1,5 @@
+#최빈값 구하기
+
 import statistics
 
 def solution(array):
