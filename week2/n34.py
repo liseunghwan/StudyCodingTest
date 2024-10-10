@@ -8,7 +8,6 @@ def solution(letter):
     '...':'s','-':'t','..-':'u','...-':'v','.--':'w','-..-':'x',
     '-.--':'y','--..':'z'
 }
-    print(morse['.-'])
     
     letter = letter.split(' ')
     answer = []
